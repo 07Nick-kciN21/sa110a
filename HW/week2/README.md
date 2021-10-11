@@ -1,12 +1,16 @@
 ## 單元測試作業
 
-使用傳統方法
+使用傳統方法  
 
+## 程式碼
+[mylodash](mylodash.js)  
+
+## 測試程式
 [_fill](test/_fill_test.js)  
 [head](test/head_test.js)  
 [indexof](test/indexof_test.js)  
-測試結果
 
+## 測試結果
 ```
 PS C:\Users\maybu\Desktop\sa110a\HW\week2\test> deno test .
 running 1 test from file:///C:/Users/maybu/Desktop/sa110a/HW/week2/test/_fill_test.js
