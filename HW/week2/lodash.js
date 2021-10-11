@@ -16,6 +16,36 @@ export function fill(Array, str, start=0, end=Array.length) {
     return Array;
 }
 
+// function baseFill(array, value, start, end) {
+//     var length = array.length;
+
+//     start = start;
+//     if (start < 0) {
+//       start = -start > length ? 0 : (length + start);
+//     }
+//     end = (end === undefined || end > length) ? length : end;
+//     if (end < 0) {
+//       end += length;
+//     }
+//     end = start > end ? 0 : end;
+//     while (start < end) {
+//       array[start++] = value;
+//     }
+//     return array;
+//   }
+
+// export function fill(array, value, start, end) {
+//     var length = array == null ? 0 : array.length;
+//     if (!length) {
+//       return [];
+//     }
+//     if (start && typeof start != 'number' && isIterateeCall(array, value, start)) {
+//       start = 0;
+//       end = length;
+//     }
+//     return baseFill(array, value, start, end);
+//   }
+
 export function indexof(Array, value, fromIndex=0) {
     for(var i=fromIndex; i<Array.length; i++){
         if(Array[i] == value){
@@ -25,36 +55,3 @@ export function indexof(Array, value, fromIndex=0) {
     return -1;
 }
 
-export function sumBy(Array, iteratee) {
-    var n;
-    var sum=0;
-    if(iteratee instanceof Function){
-        for (var i=0; i<Array.length; i++){
-            sum += iteratee(Array[i]);
-        } 
-    }
-    else{
-        n = iteratee;
-        for (var i=0; i<Array.length; i++){
-            sum += Array[i][n];
-        } 
-    }
-    return sum;
-}
-
-
-export function size(collection) {
-    if(collection instanceof Object){
-        var counts=0;
-        for(var co in collection){
-            if(Object.prototype.hasOwnProperty.call(collection, co)){
-                counts++;
-            }
-        }
-        return counts;
-    }
-    if(collection instanceof Array){
-        return collection.length;
-    }
-    return collection.length;
-}
