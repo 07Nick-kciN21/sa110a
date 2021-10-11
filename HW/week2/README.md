@@ -2,9 +2,9 @@
 
 使用傳統方法
 
-[_fill](test/_fill_test.js)
-[head](test/head_test.js)
-[indexof](test/indexof_test.js)
+[_fill](test/_fill_test.js)  
+[head](test/head_test.js)  
+[indexof](test/indexof_test.js)  
 測試結果
 
 ```
