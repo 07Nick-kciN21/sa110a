@@ -1,4 +1,4 @@
-import * as _ from '../lodash.js'
+import * as _ from '../mylodash.js'
 import { assertEquals, assertThrows } from "https://deno.land/std@0.63.0/testing/asserts.ts";
 
 
